@@ -1,0 +1,1 @@
+import {creat} from '@react-navigation/bottom-tabs'
