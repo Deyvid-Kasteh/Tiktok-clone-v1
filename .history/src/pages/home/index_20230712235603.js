@@ -8,9 +8,6 @@ import {
   FlatList,
 } from "react-native";
 
-
-import { FeedIdem } from "../../components/FeedItem";
-
 export function Home() {
   let feedItems = [
     {
@@ -46,7 +43,7 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-          <FlatList data={feedItems} renderItem={({ item }) => <FeedIdem data={item}/>} />
+      <FlatList data={feedItems} renderItem={({item}) =>  />
     </View>
   );
 }

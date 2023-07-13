@@ -46,7 +46,7 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-          <FlatList data={feedItems} renderItem={({ item }) => <FeedIdem data={item}/>} />
+          <FlatList data={feedItems} renderItem={({ item }) => </>} />
     </View>
   );
 }
