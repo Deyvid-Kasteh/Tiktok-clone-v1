@@ -9,7 +9,7 @@ export function FeedIdem({ data }) {
   const video = useRef(null);
   const [status, setStatus] = useState({});
   function handlePlayer() {
-    status.isPlaying ? video.current?.pauseAsync() : video.current?.playAsync();
+    status.isPla
   }
   return (
     <Pressable onPress={handlePlayer}>

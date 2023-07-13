@@ -6,10 +6,10 @@ import { Audio, Video } from "expo-av";
 const { height: heightScreen } = Dimensions.get("screen");
 
 export function FeedIdem({ data }) {
-  const video = useRef(null);
-  const [status, setStatus] = useState({});
+    const video = useRef(null);
+    const [status, setStatus] = useState({})
   function handlePlayer() {
-    status.isPlaying ? video.current?.pauseAsync() : video.current?.playAsync();
+    alert("TESTE");
   }
   return (
     <Pressable onPress={handlePlayer}>
@@ -20,9 +20,11 @@ export function FeedIdem({ data }) {
         resizeMode="cover"
         shouldPlay={false}
         isMuted={false}
-        isLooping={true}
-        onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              isLooping={true}
+              onPlaybackStatusUpdate={ status => setStatus(())}
       />
+
+      {/* <Text style={{ color: "white" }}>{data.name}</Text> */}
     </Pressable>
   );
 }
